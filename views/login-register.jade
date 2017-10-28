@@ -1,0 +1,53 @@
+
+.login-register
+
+// BEGIN # MODAL LOGIN
+#login-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true', style='display: none;')
+  .modal-dialog
+    .modal-content
+      .modal-header(align='center')
+       .h1#headerTitle 
+      // Begin # DIV Form
+      #div-forms
+        // Begin # Login Form
+        form#login-form
+          .modal-body
+            input#login_email.form-control(type='email', placeholder='Email', required='')
+            input#login_password.form-control(type='password', placeholder='Password', required='')
+            .checkbox
+              label
+                input(type='checkbox')
+                |  Remember me
+          .modal-footer
+            div
+              button.btn.btn-success.btn-lg.btn-block(type='submit') Login
+            div
+              button#login_lost_btn.btn.btn-link(type='button') Lost Password?
+              button#login_register_btn.btn.btn-link(type='button') Register
+        // End # Login Form
+        // Begin | Lost Password Form
+        form#lost-form(style='display:none;')
+          .modal-body
+            input#lost_email.form-control(type='text', placeholder='E-Mail', required='')
+          .modal-footer
+            div
+              button.btn.btn-success.btn-lg.btn-block(type='submit') Send
+            div
+              button#lost_login_btn.btn.btn-link(type='button') Log In
+              button#lost_register_btn.btn.btn-link(type='button') Register
+        // End | Lost Password Form
+        // Begin | Register Form
+        form#register-form(style='display:none;')
+          .modal-body
+            input#register_username.form-control(type='text', placeholder='Username', required='')
+            input#register_email.form-control(type='email', placeholder='E-Mail', required='')
+            input#register_password.form-control(type='password', placeholder='Password', required='')
+          .modal-footer
+            div
+              button.btn.btn-success.btn-lg.btn-block(type='submit') Register
+            div
+              button#register_login_btn.btn.btn-link(type='button') Log In
+              button#register_lost_btn.btn.btn-link(type='button') Lost Password?
+        // End | Register Form
+      // End # DIV Form
+// END # MODAL LOGIN

@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    -var range = [];
+    -for (var i=0; i<products.length; i++){
+      -range[i] = i;
+    -}
+
+    -function shuffle(o) {
+    -for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    -return o;
+    -};
+
+    -var random = shuffle(range);  
+
+    -for(var i=0; i<products.length; i++) {
+
+    -var product = products[random[i]];
+    -var img = product['image'];
+    -var name = product['name'];
+    -var price = product['price'];
+        div(class="col-sm-12 col-xs-6 col-md-4 col-lg-4 col-xl-4")
+            h3(class="productName") #{name}
+            a(href="/"+product['category']+"/"+product['subcategory']+"/"+product['id'])
+              img(class="img-responsive img-rounded" alt="" src=img) 
+            div(class="container")
+              div.row    
+                  input(class="product-url" type="hidden" value=product['category']+"/"+product['subcategory']+"/"+product['id'])
+                  i(class="fa fa-cart-plus fa-2x" aria-hidden="true")
+                      mark(class="productPrice") #{price+"$"}                    
+            br
+            br
+            br
+            br          
+    -}

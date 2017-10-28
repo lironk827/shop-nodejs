@@ -1,0 +1,189 @@
+{
+    "phones": {
+        "apple": [
+            {
+                "id": "1",
+                "quantity":"1",
+                "name": "Verene",
+                "image": "https://img0.etsystatic.com/136/0/8913283/il_340x270.878871270_6yq2.jpg",
+                "price": "95",
+                "description": "bitur convallis duis consequat dui nec",
+                "category":"phones",
+                "subcategory":"apple",
+                 "options":{
+                    "memory":["16GB","32GB"],
+                    "color":["black","white","gold"]
+                }
+            },
+            {
+                "id": "2",
+                "quantity":"1",
+                "name": "Vladimir",
+                "image": "https://img1.etsystatic.com/115/0/13134732/il_340x270.1031654989_s7lf.jpg",
+                "price": "35",
+                "description": "oin eu mi nulla ac enim in tempor turpis",
+                "category":"phones",
+                "subcategory":"apple",
+                "options":{
+                    "memory":["16GB","32GB"],
+                    "color":["black","white","gold"]
+                }
+            }
+        ],
+        "samsung": [
+            {
+                "id": "3",
+                "quantity":"1",
+                "name": "Verene",
+                "image": "https://img1.etsystatic.com/053/0/10168866/il_340x270.766011489_n78z.jpg",
+                "price": "95",
+                "description": "duis faucibus accumsanuis consequat dui nec",
+                "category":"phones",
+                "subcategory":"samsung",
+                "options":{
+                    "memory":["16GB","32GB"],
+                    "color":["black","white","gold"]
+                }
+            },
+            {
+                "id": "4",
+                "quantity":"1",
+                "name": "Vladimir",
+                "image": "https://img0.etsystatic.com/119/0/11434104/il_340x270.956675796_l7dn.jpg",
+                "price": "35",
+                "description": "sapien cursus vestibulum proinac enim in tempor turpis",
+                "category":"phones",
+                "subcategory":"samsung",
+                "options":{
+                    "memory":["16GB","32GB"],
+                    "color":["black","white","gold"]
+                }
+            }
+        ],
+        "lg": [
+            {
+                "id": "5",
+                "quantity":"1",
+                "name": "Verene",
+                "image": "https://img0.etsystatic.com/074/1/8928070/il_340x270.819296458_5ufn.jpg",
+                "price": "95",
+                "description": "duis faucibus accumsan odio curabitur convallis  dui nec",
+                "category":"phones",
+                "subcategory":"lg",
+                "options":{
+                    "memory":["16GB","32GB"],
+                    "color":["black","white","gold"]
+                }
+            },
+            {
+                "id": "6",
+                "quantity":"1",
+                "name": "Vladimir",
+              	"image": "https://img0.etsystatic.com/018/0/7705127/il_340x270.543347058_4cls.jpg",
+                "price": "35",
+                "description": "sapien cursus vestibulum proin eu mi nu",
+                "category":"phones",
+                "subcategory":"lg",
+                "options":{
+                    "memory":["16GB","32GB"],
+                    "color":["black","white","gold"]
+                }
+            }
+        ]
+    },
+    "cloths": {
+        "women": [
+            {
+                "id": "111",
+                "quantity":"1",
+                "name": "T-shirt",
+                "image": "https://img1.etsystatic.com/041/0/9035078/il_340x270.659861593_nr7g.jpg",
+                "price": "900",
+                "description": "T-shirt",
+                "category":"cloths",
+                "subcategory":"women",
+                "options":{
+                    "size":["XS","S","M","L"],
+                    "color":["red","black","white","blue"]
+                }
+
+
+            },
+            {
+                "id": "112",
+                "quantity":"1",
+                "name": "Skirt",
+                "image": "https://img0.etsystatic.com/106/1/8646790/il_340x270.968946010_scx1.jpg",
+                "price": "375",
+                "description": "Skirt",
+                "category":"cloths",
+                "subcategory":"women",
+                "options":{
+                    "size":["XS","S","M","L"],
+                    "color":["red","black","white","blue"]
+                }
+            }
+        ],
+        "men": [
+            {
+                "id": "241",
+                "quantity":"1",
+                "name": "Jeans",
+            	"image": "https://img0.etsystatic.com/031/0/5563755/il_340x270.631864652_q72c.jpg",
+                "price": "195",
+                "description": "jeans",
+                "category":"cloths",
+                "subcategory":"men",
+                "options":{
+                    "size":["XS","S","M","L"],
+                    "color":["red","black","white","blue"]
+                }
+            },
+            {
+                "id": "352",
+                "quantity":"1",
+                "name": "Hat",
+                "image": "https://img0.etsystatic.com/125/0/8501262/il_340x270.928717568_ol5e.jpg",
+                "price": "235",
+                "description": "hat",
+                "category":"cloths",
+                "subcategory":"men",
+                "options":{
+                    "size":["XS","S","M","L"],
+                    "color":["red","black","white","blue"]
+                }
+            }
+        ],
+        "kids": [
+            {
+                "id": "574",
+                "quantity":"1",
+                "name": "overoll",
+        		"image": "https://img1.etsystatic.com/118/0/7392786/il_340x270.1011243875_b31p.jpg",       
+                "price": "540",
+                "description": "overoll",
+                "category":"cloths",
+                "subcategory":"kids",
+                "options":{
+                    "size":["XS","S","M","L"],
+                    "color":["red","black","white","blue"]
+                }
+            },
+            {
+                "id": "532",
+                "quantity":"1",
+                "name": "coat",
+ 		        "image": "https://img1.etsystatic.com/050/1/10033535/il_340x270.664285483_hpm7.jpg",
+                "price": "100",
+                "description": "Coat",
+                "category":"cloths",
+                "subcategory":"kids",
+                "options":{
+                    "size":["XS","S","M","L"],
+                    "color":["red","black","white","blue"]
+                }
+            }
+        ]
+    }
+}
+

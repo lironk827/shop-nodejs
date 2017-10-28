@@ -1,0 +1,56 @@
+doctype html
+html
+ head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',type='text/css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css' ,  type='text/css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+ body
+
+  div(class='jumbtron text-center')
+      h2(id='user_name_header')
+      h1 Shop
+      .container-fluid
+        .row-justify-content-between
+          .col-sm-3.col-md-1.col-lg-1
+              a.btn.btn-default.btn-lg(href='/cart', role='button' aria-hidden='true') #{"MY CART   "}
+               i(class="fa fa-shopping-cart" aria-hidden="true")
+          .col-sm-3.col-md-3.col-lg-2
+              a.btn.btn-primary.btn-lg(href='/', role='button') #{"HOME   "}
+                i(class="fa fa-home" aria-hidden="true") 
+          .col-lg-7
+          .col-sm-3.col-md-8.col-lg-2
+              a.btn.btn-success.btn-lg(id='login_register' href='', role='button', data-toggle='modal', data-target='#login-modal') #{"LOGIN/REGISTER   "}
+                i(class="fa fa-sign-in" aria-hidden="true")
+  div(class="container")
+    div(class="row")
+      div(class="col-sm-3 col-md-3 col-lg-3")  
+        div(class="panel-group" id="accordion")
+            -for (var mainCategory in categories){
+            div(class="panel panel-default")
+              div(class="panel-heading")
+                h4(class="panel-title")
+                  a(data-toggle="collapse" data-parent="#accordion"  href="#collapse" + mainCategory)
+                    span(class="glyphicon glyphicon-folder-close") #{ " " + mainCategory}
+                      -var isCollapse = "";
+                      -if(collapse === mainCategory){
+                      -    isCollapse = "in"
+                      -}  
+              div(id="collapse" + mainCategory class="panel-collapse collapse " + isCollapse) 
+                   
+                ul(class="list-group")
+                  -for (var i=0; i<categories[mainCategory].length; i++){
+                  li(class="list-group-item")
+                    a(href="/"+mainCategory+"/"+categories[mainCategory][i]) #{categories[mainCategory][i]}
+                  -}
+            -}
+       div(class="col-xs-9 col-sm-9 col-md-9 col-lg-9")
+          block content
+
+
+script(src='/javascripts/client.js')
+    
+include login-register
+
